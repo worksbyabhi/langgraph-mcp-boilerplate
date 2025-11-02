@@ -32,11 +32,10 @@ const transports: { [sessionId: string]: StreamableHTTPServerTransport } = {};
 const server = new McpServer({
   name: "calculator-server",
   version: "1.0.0",
-  description: "A simple calulator server",
+  description: "A simple calculator server",
 });
 
 // Define tools
-
 server.tool(
   "add",
   "Add two numbers",
@@ -68,7 +67,7 @@ server.tool(
       content: [
         {
           type: "text",
-          text: `${parseInt(a) + parseInt(b)}`,
+          text: `${parseInt(a) - parseInt(b)}`,
         },
       ],
     };
